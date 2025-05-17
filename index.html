@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trova Il Luogo</title>
+
+  <!-- Font Fantasy -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="google-site-verification" content="0SJAv0MrI4OquEgtTJjJ6ihYMvMFC09VB0DrkYlF5e8" />
+</head>
+<body>
+  <!-- Sfondo con stelle -->
+  <div class="stars"></div>
+
+  <!-- Schermata iniziale -->
+  <div id="welcome" class="welcome-container">
+    <h1 id="titolo-iniziale" class="epic-title">Benvenuto a <span class="fantasy">Trova Il Luogo</span></h1>
+    <div id="password-screen" class="password-screen">
+      <div id="scrigno" class="scrigno">
+        <label for="password-input" class="password-label">Inserisci la password:</label>
+        <input type="password" id="password-input" class="password-input" placeholder="Password">
+        <button id="submit-password" class="password-button">Conferma</button>
+      </div>
+    </div>
+    <button id="start-button" class="hidden start-button">Inizia il Gioco</button>
+  </div>
+
+  <!-- Area di gioco -->
+  <div id="game-area" class="hidden game-area">
+    <audio id="audio-poesia" controls class="audio-poesia"></audio>
+    <div id="poesia-text" class="poesia-text"></div>
+
+    <div id="input-area" class="hidden input-area">
+      <input type="text" id="guess-input" class="guess-input" placeholder="Scrivi qui il luogo...">
+      <button id="submit-button" class="submit-button">Invia</button>
+    </div>
+
+    <!-- Immagine con candele laterali -->
+    <div id="image-area" class="hidden image-area fade-in">
+      <div class="candle-wrapper">
+        <div class="candle-left">🕯️</div>
+        <div class="candle-middle">🕯️🕯️</div>
+        <div class="candle-right">🕯️</div>
+        <img id="location-image" class="location-image" src="" alt="Luogo">
+        <div class="candle-middle">🕯️</div>
+        <div class="candle-right">🕯️🕯️</div>
+        <div class="candle-right">🕯️</div>
+      </div>
+    </div>
+
+<div id="location-text" class="location-text hidden"></div>
+
+
+    <div id="next-area" class="hidden next-area">
+      <button id="next-button" class="next-button">Prossima Tappa</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
